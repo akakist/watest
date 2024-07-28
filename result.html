@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<title>TestQuant</title>
+</head>
+
+<style>
+</style>
+<style>
+body{
+    background-color: #F1FFF4;
+    font-family: "Arial";
+}
+</style>
+
+<script src="demo.js">
+
+</script>
+<style>
+.pol{
+width: 50px
+}
+#demo{
+color: green;
+font-size: 16px;;
+}
+</style>
+
+
+
+<body >
+
+<div class="container" >
+  <h1> Test Demo</h1>
+  <form name='wa'>
+    <div class="row">
+      <div class="col-lg-6 vh-100 ">
+
+        <div class="form-group">
+            <input type="IdInstance" class="form-control" id="IdInstance" aria-describedby="IdInstance" placeholder="IdInstance">
+        </div>
+
+        <div class="form-group">
+            <input type="apiTokenInstance" class="form-control" id="apiTokenInstance" aria-describedby="apiTokenInstance" placeholder="apiTokenInstance">
+        </div>
+  
+        <div class="form-group">
+          <button class="button"  onclick='getSettings(); return false;'>getSettings</button>
+          <button class="button"  onclick='getStateInstance(); return false;'>getStateInstance</button>
+        </div>
+
+
+        <div class="form-group">
+            <input type="to_phone" class="form-control" id="to_phone" aria-describedby="to_phone" placeholder="to_phone">
+        </div>
+
+        
+        <div class="form-group">
+          <label for="msg">msg</label>
+          <textarea class="form-control" id="msg" rows="3"></textarea>
+        </div>  
+        <div class="form-group">
+          <button class="button"  onclick='sendMessage(); return false;'>sendMessage</button>
+        </div>
+
+
+        <div class="form-group">
+            <input type="to_phone1" class="form-control" id="to_phone1" aria-describedby="to_phone1" placeholder="to_phone1">
+        </div>
+
+        <div class="form-group">
+            <input type="url" class="form-control" id="url" aria-describedby="url" placeholder="url">
+        </div>
+
+        <div class="form-group">
+          <button class="button"  onclick='sendFileByUrl(); return false;'>sendFileByUrl</button>
+        </div>
+      </div>
+      <div class="col-lg-6 vh-100 ">
+        <div class="form-group">
+          <label for="response">response</label>
+          <textarea class="form-control" id="response" rows="10"></textarea>
+        </div>  
+      </div>
+    </div>
+  </form>
+</div>
+</body>
+</html>
+
+
+
